@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>KONVERSI ANGKA KE HURUF</title>
+</head>
+
+<SCRIPT LANGUAGE = "JavaScript">
+    //<!-
+    
+    var nilai = prompt("Masukkan Angka (0-100): ", 0);
+    var konversi = "";
+
+    if (nilai > 0 && nilai <= 40) {
+    konversi = "E";
+    }
+
+    else if (40 < nilai && nilai <= 55) {
+    konversi = "D";
+    }
+    
+    else if (55 < nilai && nilai <= 60) {
+    konversi = "C";
+    }
+
+    else if (60 < nilai && nilai <= 65) {
+    konversi = "BC";
+    }
+    
+    else if (65 < nilai && nilai <= 70) {
+    konversi = "B";
+    }
+
+    else if (70 < nilai && nilai <= 80) {
+    konversi = "AB";
+    }
+
+    else if (80 < nilai && nilai <= 100) {
+    konversi = "A";
+    }
+
+    else {
+        onload = text()
+       document.text.reload()
+    }
+    document.write("" + konversi);
+    //->
+</SCRIPT>
+    
+</body>
+</html>

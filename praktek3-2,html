@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Kalkulator Sederhana</title>
+    
+</head>
+<script language="Javascript">
+   
+    function Penjumlahan() {
+        var nilai1 = parseInt(document.kirim.T1.value)
+        var nilai2 = parseInt(document.kirim.T2.value)
+        hasil = nilai1 + nilai2
+        document.kirim.T3.value = hasil
+    }
+    function Pengurangan() {
+        var nilai1= parseInt(document.kirim.T1.value)
+        var nilai2 = parseInt(document.kirim.T2.value)
+        hasil = nilai1 - nilai2
+        document.kirim.T3.value = hasil
+    }
+    function Perkalian() {
+        var nilai1 = parseInt(document.kirim.T1.value)
+        var nilai2 = parseInt(document.kirim.T2.value)
+        hasil = nilai1 * nilai2
+        document.kirim.T3.value = hasil
+    }
+    function Pembagian() {
+        var nilai1 = parseInt(document.kirim.T1.value)
+        var nilai2 = parseInt(document.kirim.T2.value)
+        hasil = nilai1 / nilai2
+        document.kirim.T3.value = hasil
+    }
+    document.write("Dimodifikasi terakhir pada " + document.lastModified);
+</script>
+
+<body>
+    <form method="POST" name="kirim">
+        <div class="tanda">
+          
+            <p class="inputan">Bilangan 1 <input type="text" name="T1" size="20"><br><br>
+                Bilangan 2 <input type="text" name="T2" size="20"><br><br>hasil  <input type="text" name="T3"
+                    size="20"></p>
+            <p class="atas"><input class="button b1" type="button" value="+" name="B1" onclick=Penjumlahan()>
+            <input class="button b2" type="button" value="-" name="B2" onclick=Pengurangan()></p>
+
+            <p class="bawah"><input class="button b3" type="button" value="x" name="B3" onclick=Perkalian()>
+            <input class="button b3" type="button" value=":" name="B4" onclick=Pembagian()> <br> <br> 
+            <input class="b4" type="button" value="Reset" name="B4" onclick= document.kirim.reset()> </p>
+            
+        </div>
+    </form>
+</body>
+</html>
